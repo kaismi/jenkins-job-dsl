@@ -1,4 +1,4 @@
 import utils.JobUtils
 
-JobUtils.createBuildJob('hibernate-envers', this)
+JobUtils.createBuildJobs('hibernate-envers', this)
 

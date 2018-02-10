@@ -1,3 +1,3 @@
 import utils.JobUtils
 
-JobUtils.createBuildJob('snmp-mock-agent', this)
+JobUtils.createBuildJobs('snmp-mock-agent', this)

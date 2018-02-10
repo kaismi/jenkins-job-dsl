@@ -4,7 +4,7 @@ import groovy.json.JsonSlurper
 
 class JobUtils {
 
-    static def createBuildJob(project, dslFactory, branchApiPrefix = "https://api.github.com/repos/kaismi/", gitUrlPrefix = "git://github.com/kaismi/", mavenCall = "clean package") {
+    static def createBuildJobs(project, dslFactory, branchApiPrefix = "https://api.github.com/repos/kaismi/", gitUrlPrefix = "git://github.com/kaismi/", mavenCall = "clean package") {
         def branchApi = new URL(branchApiPrefix + "${project}/branches")
         def branches = new JsonSlurper().parse(branchApi.newReader())
         branches.each {

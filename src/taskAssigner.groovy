@@ -1,3 +1,3 @@
 import utils.JobUtils
 
-JobUtils.createBuildJob('task-assigner', this)
+JobUtils.createBuildJobs('task-assigner', this)

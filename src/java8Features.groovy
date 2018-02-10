@@ -1,3 +1,3 @@
 import utils.JobUtils
 
-JobUtils.createBuildJob('java8-features', this)
+JobUtils.createBuildJobs('java8-features', this)
