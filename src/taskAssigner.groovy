@@ -9,7 +9,7 @@ branches.each {
             git("git://github.com/kaismi/${project}.git", branchName)
         }
         steps {
-            maven("clean install")
+            maven("clean package")
         }
     }
 }
