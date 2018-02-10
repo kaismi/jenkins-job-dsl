@@ -2,7 +2,7 @@ package utils
 
 class JobUtils {
 
-    def createBuildJob(String project) {
+    static def createBuildJob(String project) {
         def branchApi = new URL("https://api.github.com/repos/kaismi/${project}/branches")
         def branches = new groovy.json.JsonSlurper().parse(branchApi.newReader())
         branches.each {
