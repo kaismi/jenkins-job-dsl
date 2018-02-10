@@ -1,5 +1,3 @@
-package jobs
-
 def project = 'task-assigner'
 def branchApi = new URL("https://api.github.com/repos/kaismi/${project}/branches")
 def branches = new groovy.json.JsonSlurper().parse(branchApi.newReader())
