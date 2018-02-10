@@ -9,10 +9,10 @@ class JobUtils {
             def branchName = it.name
             def jobName = "${project}-${branchName}".replaceAll('/', '-')
             dslFactory.job(jobName) {
-                dslFactory.scm {
+                scm {
                     dslFactory.git("git://github.com/kaismi/${project}.git", branchName)
                 }
-                dslFactory.steps {
+                steps {
                     dslFactory.maven("clean package")
                 }
             }
