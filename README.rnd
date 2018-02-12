@@ -1,9 +1,0 @@
-1) Download Jenkins, run java -jar jenkins.war and setup admin account
-2) Install Job DSL plugin and restart
-3) Disable script approval in security config
-
-1) Create seed job in Jenkins (freestyle project with name jenkins-job-dsl)
-1.1) SCM config
-- Repository URL = https://github.com/kaismi/jenkins-job-dsl
-1.2) Build config
-- Add build step "Process Job DSLs" with Look in Filesystem option in path src/*.groovy
